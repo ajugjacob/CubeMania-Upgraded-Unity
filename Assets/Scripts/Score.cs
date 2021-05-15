@@ -28,4 +28,13 @@ public class Score : MonoBehaviour
     {
         hasGameEnded = true;
     }
+
+    public void UpdateHighScore()
+    {
+        PlayerPrefs.SetFloat("CurrentScore", UpdatedScore);
+        if (PlayerPrefs.GetFloat("HighScore", 0) < UpdatedScore)
+        {
+            PlayerPrefs.SetFloat("HighScore", UpdatedScore);
+        }
+    }
 }

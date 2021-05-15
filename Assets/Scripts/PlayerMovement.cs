@@ -9,7 +9,6 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        Time.timeScale = 1f;
         rb.AddForce(0, 0, ForceValue * Time.deltaTime);
         float x = Input.GetAxis("Horizontal");
         speed = PlayerPrefs.GetFloat("Speed", 20);
