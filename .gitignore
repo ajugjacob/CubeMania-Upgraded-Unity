@@ -6,5 +6,6 @@ Packages
 UserSettings
 .vsconfig
 Assembly-CSharp.csproj
+Assets/TextMesh Pro
 *.sln
 *.htm
